@@ -1,0 +1,191 @@
+<!--
+ * @Description: d
+ * @Version: 2.0
+ * @Autor: Seven
+ * @Date: 2022-06-14 21:16:29
+ * @LastEditors: QiJinYu
+ * @LastEditTime: 2022-06-18 18:45:39
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="./js/swiper-bundle.min.js"></script>
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialog" id="dialog">
+    <img src="./image/组 2.png" style="width: 170px;z-index: 9;" alt="">
+    <img src="./image/1 (6).jpg" alt="">
+  </div>
+    <!-- Swiper -->
+    <nav>
+    
+      <ul>
+        <li>
+          <a href="./news.html">NEWS</a>
+        </li>
+        <li>
+          <a href="./info.html">STORY</a>
+        </li>
+        <li>
+          <a href="./me.html">Find ME</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="logo"><img src="./image/组 2.png" alt=""></div>
+      <h2>Once in a lifetime</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/1 (5).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).png" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (5).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).png" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (5).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).JPG" alt=""></div>
+          <div class="swiper-slide"><img src="./image/1 (2).png" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div> 
+      <h2 class="h2">LOVE</h2>
+    </main>
+    <div class="content">
+      <div class="l">
+        <img src="./image/1 (5).JPG" alt="">
+      </div>
+      <div class="r">
+        <h3>n terms of creating a website        </h3>
+        <p>
+          n terms of creating a website (corporate
+          or personal) it don’t have to be coded
+          from scratch anymore. at means you
+          probably don’t have to start from a
+          blank .PHP, .CSS or .HTML document.
+          anks to many kind and generous
+          designers / developers, high quality
+          web templates are distributed freely
+          over the Internet.n terms of creating a
+          website (corporate or personal) it don’t
+          have to be coded from scratch
+          anymore. at means you probably
+          don’t have to start from a
+          
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="l">
+        <h3>n terms of creating a website        </h3>
+        <p>
+          n terms of creating a website (corporate
+          or personal) it don’t have to be coded
+          from scratch anymore. at means you
+          probably don’t have to start from a
+          blank .PHP, .CSS or .HTML document.
+          anks to many kind and generous
+          designers / developers, high quality
+          web templates are distributed freely
+          over the Internet.n terms of creating a
+          website (corporate or personal) it don’t
+          have to be coded from scratch
+          anymore. at means you probably
+          don’t have to start from a
+          
+        </p>
+      </div>
+      <div class="r">
+
+        <img src="./image/1 (1).JPG" alt="">
+      
+      </div>
+    </div>
+    <div class="content">
+      <div class="l">
+        <img src="./image/1 (2).png" alt="">
+      </div>
+      <div class="r">
+        <h3>n terms of creating a website        </h3>
+        <p>
+          n terms of creating a website (corporate
+          or personal) it don’t have to be coded
+          from scratch anymore. at means you
+          probably don’t have to start from a
+          blank .PHP, .CSS or .HTML document.
+          anks to many kind and generous
+          designers / developers, high quality
+          web templates are distributed freely
+          over the Internet.n terms of creating a
+          website (corporate or personal) it don’t
+          have to be coded from scratch
+          anymore. at means you probably
+          don’t have to start from a
+          
+        </p>
+      </div>
+    </div>
+    <footer>
+      <img class="z" src="./image/组 2.png" alt="">
+      <div class="image">
+        <img src="./image/1 (1).JPG" alt="">
+        <img src="./image/1 (2).png" alt="">
+        <img src="./image/1 (5).JPG" style="height: 369px;" alt="">
+      </div>
+      <p>n terms of creating a website (corporate or
+personal) it don’t have to be coded from scratch</p>
+    </footer>
+    <!-- Swiper JS -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 150,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+<script>
+  let timer = null
+  let dialog = document.getElementById('dialog')
+  dialog.onclick = function(){
+    this.style.display = 'none'
+    clearTimeout(timer)
+    timer = null
+  }
+  timer = setTimeout(()=>{
+    let dialog = document.getElementById('dialog')
+    dialog.style.display = 'none'
+  }, 5000)
+</script>
+</html>

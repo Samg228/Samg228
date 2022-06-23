@@ -1,0 +1,164 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: rgb(255, 244, 244);
+}
+main{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: rgb(231, 196, 198);
+}
+main h2{
+  text-align: center;
+  font-size: 37px;
+  font-weight: 100;
+  color: #ffffffad;
+}
+.h2{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 455px;
+  color: #fff;
+  font-weight: 100;
+  transform: translate(-50%,-50%);
+}
+.logo{
+  position: absolute;
+  top: 31px;
+  left: 74px;
+  width: 100px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 500px;
+  padding-top: 80px;
+}
+
+.swiper-slide {
+  height: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dialog{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(170, 170, 194);
+  z-index: 9;
+}
+.dialog img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+nav{
+  width: 100%;
+  height: 60px;
+  background-color: rgb(231, 196, 198);
+}
+nav ul{
+  display: flex;
+  flex-direction: row-reverse;
+}
+nav ul li{
+  margin: 20px 40px;
+}
+nav ul li a{
+  display: block;
+  font-size: 28px;
+  color: white;
+  font-weight: 100;
+}
+nav ul li a:hover{
+  color: aquamarine;
+}
+.content {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+
+}
+
+.l{
+  width: 50%;
+}
+.r{
+  width: 50%;
+}
+.content img{
+  width: 500px;
+}
+.content h3{
+  font-size: 28px;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(68, 68, 68);
+}
+.content p{
+  width: 500px;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+  margin: 50px auto;
+  color: rgb(82, 82, 82);
+}
+footer{
+  position: relative;
+}
+footer .z{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+footer .image {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+footer .image img{
+  width: 30%;
+}
+footer p{
+  width: 50%;
+  margin: 0 auto;
+  font-size: 35px;
+  letter-spacing: 2px;
+  color: rgb(189, 189, 189);
+}
